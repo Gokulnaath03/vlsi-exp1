@@ -26,17 +26,17 @@ and verify the outputs as per the truth table.
 
 
 ## PROGRAM:
-module LG(a, b, c0, c1, c2, c3, c4, c5, c6);
-input a, b;
-output c0, c1, c2, c3, c4, c5, c6;
-and(c0, a, b);
-or(c1, a, b);
-xor(c2, a, b);
-nand(c3, a, b);
-nor(c4, a, b);
-xnor(c5, a, b);
-not(c6, a);
-endmodule
+module LG(a, b, c0, c1, c2, c3, c4, c5, c6);<md>
+input a, b;<md>
+output c0, c1, c2, c3, c4, c5, c6;<md>
+and(c0, a, b);<md>
+or(c1, a, b);<md>
+xor(c2, a, b);<md>
+nand(c3, a, b);<md>
+nor(c4, a, b);<md>
+xnor(c5, a, b);<md>
+not(c6, a);<md>
+endmodule<md>
 
 
 
@@ -53,12 +53,12 @@ endmodule
 
 
 ## PROGRAM:
-module HA (a, b, sum, carry);
-input a, b;
-output sum, carry;
-xor g1(sum, a, b);
-and g2 (carry, a, b);
-endmodule
+module HA (a, b, sum, carry);<md>
+input a, b;<md>
+output sum, carry;<md>
+xor g1(sum, a, b);<md>
+and g2 (carry, a, b);<md>
+endmodule<md>
 
 
 ##  OUTPUT:
@@ -75,12 +75,12 @@ endmodule
 
 
 ## PROGRAM:
-module HS (a, b, diff, borrow);
-input a, b;
-output diff, borrow;
-xor gl (diff, a, b);
-and g2 (borrow, ~a, b);
-endmodule
+module HS (a, b, diff, borrow);<md>
+input a, b;<md>
+output diff, borrow;<md>
+xor gl (diff, a, b);<md>
+and g2 (borrow, ~a, b);<md>
+endmodule<md>
 
 
 ## OUTPUT:
@@ -95,16 +95,16 @@ endmodule
 ![image](https://github.com/Gokulnaath03/vlsi-exp1/assets/167178811/34d91575-840e-46b4-ac9d-0f5eaa2e32b9)
 
 ## PROGRAM:
-module FA(a, b, c, sum, carry);
-input a, b, c;
-output sum, carry;
-wire w1, w2, w3;
-xor g1(w1, a, b);
-and g2(w2, a, b);
-xor g3(sum, w1 ,c);
-and g4(w3, w1, c);
-or g5(carry, w3, w2);
-endmodule
+module FA(a, b, c, sum, carry);<md>
+input a, b, c;<md>
+output sum, carry;<md>
+wire w1, w2, w3;<md>
+xor g1(w1, a, b);<md>
+and g2(w2, a, b);<md>
+xor g3(sum, w1 ,c);<md>
+and g4(w3, w1, c);<md>
+or g5(carry, w3, w2);<md>
+endmodule<md>
 
 
 ## OUTPUT:
@@ -120,16 +120,16 @@ endmodule
 
 
 ## PROGRAM:
-module FS(a, b, c, diff, borrow);
-input a, b, c;
-output diff, borrow;
-wire x, y, z;
-xor g1(x, a, b);
-and g2(y, ~a , b);
-xor g3(diff, x, c);
-and g4(z, c, ~x);
-or g5(borrow, y, z);
-endmodule
+module FS(a, b, c, diff, borrow);<md>
+input a, b, c;<md>
+output diff, borrow;<md>
+wire x, y, z;<md>
+xor g1(x, a, b);<md>
+and g2(y, ~a , b);<md>
+xor g3(diff, x, c);<md>
+and g4(z, c, ~x);<md>
+or g5(borrow, y, z);<md>
+endmodule<md>
 
 
 ## OUTPUT:
@@ -143,26 +143,26 @@ endmodule
 ![image](https://github.com/Gokulnaath03/vlsi-exp1/assets/167178811/87e20862-0b30-42da-8973-d6ec27dbe28a)
 
 ## PROGRAM:
-module FA(a, b, c, sum, carry);
-input a, b, c;
-output sum, carry;
-assign sum=a ^ b ^ c;
-assign carry=a & b|b & c|a & c;
-endmodule
-module RCA(a, b, c, sum, carry);
-input [7:0] a, b;
-input c;
-output [7:0] sum;
-output carry;
-wire [6:0] w;
-FA f1(a[0], b[0], c, sum[0], w[0]);
-FA f2(a[1], b[1], w[0], sum[1], w[1]);
-FA f3(a[2], b[2], w[1], sum[2], w[2]);
-FA f4(a[3], b[3], w[2], sum[3], w[3]);
-FA f5(a[4], b[4], w[3], sum[4], w[4]);
-FA f6(a[5], b[5], w[4], sum[5], w[5]);
-FA f7(a[6], b[6], w[5], sum[6], w[6]);
-FA f8(a[7], b[7], w[6], sum[7], carry);
+module FA(a, b, c, sum, carry);<md>
+input a, b, c;<md>
+output sum, carry;<md>
+assign sum=a ^ b ^ c;<md>
+assign carry=a & b|b & c|a & c;<md>
+endmodule<md>
+module RCA(a, b, c, sum, carry);<md>
+input [7:0] a, b;<md>
+input c;<md>
+output [7:0] sum;<md>
+output carry;<md>
+wire [6:0] w;<md>
+FA f1(a[0], b[0], c, sum[0], w[0]);<md>
+FA f2(a[1], b[1], w[0], sum[1], w[1]);<md>
+FA f3(a[2], b[2], w[1], sum[2], w[2]);<md>
+FA f4(a[3], b[3], w[2], sum[3], w[3]);<md>
+FA f5(a[4], b[4], w[3], sum[4], w[4]);<md>
+FA f6(a[5], b[5], w[4], sum[5], w[5]);<md>
+FA f7(a[6], b[6], w[5], sum[6], w[6]);<md>
+FA f8(a[7], b[7], w[6], sum[7], carry);<md>
 endmodule
 
 
