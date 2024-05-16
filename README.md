@@ -1,7 +1,7 @@
 # vlsi-exp1
+## SIMULATION AND SYNTHESIS LOGIC GATES,ADDERS AND SUBTRACTOR USING VIVADO
 
-
-#AIM:To simulate and synthesis logic gates,4  adders and substractor using VIVADO.
+# AIM:To simulate and synthesis logic gates,4  adders and substractor using VIVADO.
 
 #APPARATUS REQUIRED:VIVADO 2023.2
 
