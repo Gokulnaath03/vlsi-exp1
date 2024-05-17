@@ -25,6 +25,8 @@ and verify the outputs as per the truth table.
 ![image](https://github.com/Gokulnaath03/vlsi-exp1/assets/167178811/48aa8480-8544-48f5-bdbb-1f7c9a11f4b2)
 
 
+
+
 ## PROGRAM:
 module LG(a, b, c0, c1, c2, c3, c4, c5, c6);<br>
 input a, b;<br>
@@ -40,6 +42,7 @@ endmodule
 
 
 
+
 ## OUTPUT:
 
 ![image](https://github.com/Gokulnaath03/vlsi-exp1/assets/167178811/e78c1ace-1412-446f-9902-a1f5361be7da)
@@ -50,6 +53,7 @@ endmodule
 
 
 ![image](https://github.com/Gokulnaath03/vlsi-exp1/assets/167178811/115e403a-bf53-4d02-b10e-dbf6bc1ff749)
+
 
 
 ## PROGRAM:
@@ -74,6 +78,7 @@ endmodule
 
 
 
+
 ## PROGRAM:
 module HS (a, b, diff, borrow);<br>
 input a, b;<br>
@@ -93,6 +98,8 @@ endmodule
 ## FULL ADDER:
 
 ![image](https://github.com/Gokulnaath03/vlsi-exp1/assets/167178811/34d91575-840e-46b4-ac9d-0f5eaa2e32b9)
+
+
 
 ## PROGRAM:
 module FA(a, b, c, sum, carry);<br>
@@ -119,6 +126,7 @@ endmodule
 ![image](https://github.com/Gokulnaath03/vlsi-exp1/assets/167178811/6dd45df6-26fe-4c78-a9b6-50ec43ff23cb)
 
 
+
 ## PROGRAM:
 module FS(a, b, c, diff, borrow);<br>
 input a, b, c;<br>
@@ -141,6 +149,8 @@ endmodule
 ## 8-BIT RIPPLE CARRY-ADDER:
 
 ![image](https://github.com/Gokulnaath03/vlsi-exp1/assets/167178811/87e20862-0b30-42da-8973-d6ec27dbe28a)
+
+
 
 ## PROGRAM:
 module FA(a, b, c, sum, carry);<br>
