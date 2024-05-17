@@ -2,7 +2,7 @@
 # SIMULATE AND SYNTHESIS LOGIC GATES,ADDERS AND SUBTRACTOR USING VIVADO
 
 ## AIM: 
-To simulate and synthesis logic gates,4  adders and substractor using VIVADO.
+To simulate and synthesis logic gates,  adders and substractor using VIVADO.
 
 ## APPARATUS REQUIRED:
 VIVADO 2023.2
