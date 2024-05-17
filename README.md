@@ -173,5 +173,4 @@ endmodule
 
 
 ## RESULT:
-Thus, the logic gates and 4 Bit of Adder and Subtractor are
- Implemented and simulated successfully.
+The simulate and synthesis Logic gates,Adders and Subtractor using VIVADO is successfully verified.
